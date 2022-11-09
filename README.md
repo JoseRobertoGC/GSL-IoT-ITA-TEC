@@ -73,51 +73,51 @@ This project is under the GPL license. Veja o arquivo [LICENSE](LICENSE) para ma
 ## ✍️ Authors <a name = "authors"></a>
 <table>
 <tr>
-  <th> Name </th>
+  <th> Moisés Arturo Badillo Álvarez </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Daniel Rong Chen </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Iván Santiago Hernández Mendoza </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Diego Esteban Zepeda Ceballos </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> José Roberto Garduño Cerecedo </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Gabriel Augusto Magaton </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> ITA </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Leonardo Henrique de Melo </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> ITA </th>
 </tr>
 
 <tr>
-  <th> Name </th>
+  <th> Rafael Cenato dos Santos Silva </th>
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
-  <th> School </th>
+  <th> ITA </th>
 </tr>
 
 </table>
