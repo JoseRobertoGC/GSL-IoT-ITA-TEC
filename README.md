@@ -74,49 +74,49 @@ This project is under the GPL license. Veja o arquivo [LICENSE](LICENSE) para ma
 <table>
 <tr>
   <th> Moisés Arturo Badillo Álvarez </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/MoyBadillo" rel="noopener">Moisés Badillo [A00834306@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
   <th> Daniel Rong Chen </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/D-Z3r0" rel="noopener">Daniel Rong [A01656992@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
   <th> Iván Santiago Hernández Mendoza </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/JourneyHM" rel="noopener">Iván Hernández [A01662556@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
   <th> Diego Esteban Zepeda Ceballos </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/estzep" rel="noopener">Esteban Zepeda [A01026512@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
   <th> José Roberto Garduño Cerecedo </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">José Cerecedo [A01656294@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
 
 <tr>
   <th> Gabriel Augusto Magaton </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/gmagaton" rel="noopener">Gabriel Augusto [gabriel.magaton.101051@ga.ita.br]</a> </th>
   <th> ITA </th>
 </tr>
 
 <tr>
   <th> Leonardo Henrique de Melo </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/leonardohdemelo" rel="noopener">Leonardo Henrique [leonardo.melo.101060@ga.ita.br]</a> </th>
   <th> ITA </th>
 </tr>
 
 <tr>
   <th> Rafael Cenato dos Santos Silva </th>
-  <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">Name [@]</a> </th>
+  <th> <a href="https://github.com/rcenato" rel="noopener">Rafael Cenato [rafael.silva@ga.ita.br]</a> </th>
   <th> ITA </th>
 </tr>
 
