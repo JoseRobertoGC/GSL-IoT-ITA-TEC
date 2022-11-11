@@ -16,6 +16,7 @@
 - [Scenario](#scenario_desc)
 - [License](#license)
 - [Authors](#authors)
+- [Methodology and Concepts] (#methodology)
 
 ## 🧐 About the Project <a name = "about"></a>
 
@@ -62,6 +63,23 @@ For example, in November of 2008, Santa Catarina, a state in the south of Brazil
 Because of the electrical blackout, many communities were left without communication, which made it difficult for people to call for help and inform where they were. It is the issue that our project will try to solve.
 
 [![IMAGE_ALT](https://img.youtube.com/vi/2RKeZk8qudA/0.jpg)](https://www.youtube.com/embed/2RKeZk8qudA)
+
+
+
+## 📚 Methodology and Concepts <a name = "methodology"></a>
+
+This challenge follows the methodology of a Global Shared Classroom, which consists of 5 weeks of collaborative work (sectioned in ice breaker, working sesions and reflections) between universities from different countires, in this case being Tecnológico de Monterrey from Mexico and Instituto Tecnológico de Aeronautica from Brazil. 
+
+To solve this challenge, concepts such as database creation and management, Logic Gates and Chips, Internet of Things, Business plans and Networking will be used. 
+
+And we will make an executable solution using software such as: 
+
+- Mosquitto
+- Python
+- Microsoft Azure
+- Linux/Ubuntu virtual machines
+- PHP
+- SQL
 
 
 
