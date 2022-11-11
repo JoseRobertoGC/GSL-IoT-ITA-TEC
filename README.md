@@ -16,7 +16,7 @@
 - [Scenario](#scenario_desc)
 - [License](#license)
 - [Authors](#authors)
-- [Methodology and Concepts] (#methodology)
+- [Methodology and Concepts](#methodology)
 
 ## 🧐 About the Project <a name = "about"></a>
 
@@ -80,6 +80,7 @@ And we will make an executable solution using software such as:
 - Linux/Ubuntu virtual machines
 - PHP
 - SQL
+
 
 
 
