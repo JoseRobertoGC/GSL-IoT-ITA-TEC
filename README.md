@@ -3,9 +3,9 @@
 
 <div align="center">
 
-![GitHub collaborators](#authors)
-![GitHub issues](https://github.com/JoseRobertoGC/GSL-IoT-ITA-TEC/issues)
-![GitHub pull requests](https://github.com/JoseRobertoGC/GSL-IoT-ITA-TEC/pulls)
+![GitHub last commit](https://img.shields.io/github/last-commit/kabartsjc/gsl-iot)
+![GitHub issues](https://img.shields.io/github/issues/kabartsjc/gsl-iot)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kabartsjc/gsl-iot)
 [![License](https://img.shields.io/badge/license-GPL-blue.svg)](/LICENSE)
 </div>
 
