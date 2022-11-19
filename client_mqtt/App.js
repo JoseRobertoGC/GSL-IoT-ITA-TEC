@@ -43,10 +43,16 @@ class App extends Component {
 
   onConnectionLost = responseObject => {
     // TODO: onConnectionLost
+    if (responseObject.errorCode !== 0) {
+      console.log('onConnectionLost:' + responseObject.errorMessage);
   };
 
   onMessageArrived = message => {
     // TODO: onMessageArrived
+    console.log('onMessageArrived:' + message.payloadString);
+    newmessageList = this.state.messageList;
+    newmessageList.unshift(message.payloadString);
+    this.setState({ messageList: newmessageList });
   };
 
   subscribeTopic = () => {
@@ -56,10 +62,15 @@ class App extends Component {
 
   onConnect = () => {
     // TODO: onConnect
+    console.log('onConnect');
+    this.setState({ status: 'connected' });
   };
 
   onFailure = () => {
     // TODO: onFailure
+    console.log('Connect failed!');
+    console.log(err);
+    this.setState({ status: 'failed' });
   };
 
   connect = () => {
