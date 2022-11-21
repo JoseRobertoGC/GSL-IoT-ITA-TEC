@@ -125,6 +125,12 @@ This project is under the GPL license. Veja o arquivo [LICENSE](LICENSE) para ma
   <th> <a href="https://github.com/JoseRobertoGC" rel="noopener">José Cerecedo [A01656294@tec.mx]</a> </th>
   <th> Tecnológico de Monterrey </th>
 </tr>
+  
+<tr>
+  <th> Javier Valente Rodríguez </th>
+  <th> <a href="https://github.com/JavierVr06" rel="noopener">Javier Valente [A01662693@tec.mx]</a> </th>
+  <th> Tecnológico de Monterrey </th>
+</tr>
 
 <tr>
   <th> Gabriel Augusto Magaton </th>
