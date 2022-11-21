@@ -17,6 +17,7 @@
 - [License](#license)
 - [Authors](#authors)
 - [Methodology and Concepts](#methodology)
+- [Youtube Channel](#youtube)
 
 ## 🧐 About the Project <a name = "about"></a>
 
@@ -81,6 +82,10 @@ And we will make an executable solution using software such as:
 - PHP
 - SQL
 
+## 🧐 Youtube Channel <a name = "youtube"></a>
+
+In our Youtube Channel we will update every week the demostrations of the work realized in all the stages of the proyect
+https://www.youtube.com/@gslIOT
 
 
 
