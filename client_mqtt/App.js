@@ -45,6 +45,7 @@ class App extends Component {
     // TODO: onConnectionLost
     if (responseObject.errorCode !== 0) {
       console.log('onConnectionLost:' + responseObject.errorMessage);
+    }
   };
 
   onMessageArrived = message => {
