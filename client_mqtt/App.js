@@ -2,12 +2,16 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable no-undef */
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react'; 
+import {Component} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 
 import {Button} from '@rneui/base';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import init from 'react_native_mqtt';
+import Geolocation from '@react-native-community/geolocation';
+
+let client; 
 
 init({
   size: 10000,
@@ -21,24 +25,21 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      topic: '/client/severity',
-      subscribedTopic: '/server/information',
-      message: 'severity 1',
+      topic: '/rescues/severity',
+      subscribedTopic: '/rescues/severity',
+      message: '',
       messageList: [],
       status: '',
-      ip: '192.168.15.3',
-      port: 9001,
+      ip: '0.tcp.sa.ngrok.io',
+      port: 16960,
       severity: '',
+      latitude: 0, 
+      longitude: 0,
     };
-    this.client = new Paho.MQTT.Client(
-      this.state.ip,
-      this.state.port,
-      this.state.subscribedTopic,
-    );
-    //this.client.connect();
 
-    this.client.onConnectionLost = this.onConnectionLost;
-    this.client.onMessageArrived = this.onMessageArrived;
+    this.getOneTimeLocation(); 
+    this.subscribeLocation();  
+
   }
 
   onConnectionLost = responseObject => {
@@ -57,42 +58,100 @@ class App extends Component {
   };
 
   subscribeTopic = () => {
-    // TODO: subscribeTopic
-    this.client.subscribe(this.state.topic);
+    client.subscribe(this.state.topic);
   };
 
   onConnect = () => {
-    // TODO: onConnect
     console.log('onConnect');
     this.setState({ status: 'connected' });
+    this.timer = setInterval(this.sendMessage.bind(this), 10000); 
   };
 
   onFailure = () => {
-    // TODO: onFailure
     console.log('Connect failed!');
     console.log(err);
     this.setState({ status: 'failed' });
   };
 
   connect = () => {
-    // TODO: connect
-    // this.client.disconnect();
-    this.client = new Paho.MQTT.Client(
+    client = new Paho.MQTT.Client(
       this.state.ip,
       this.state.port,
-      'clientId',
+      'mqttjs_' + Math.random().toString(16).substr(2, 8)
     );
-    this.client.connect();
+
+    client.connect();
+
+    client.onConnected = this.onConnect;
+    client.onConnectionLost = this.onConnectionLost;
+    client.onMessageArrived = this.onMessageArrived;
+    client.onConnectionLost = this.onFailure;
   };
 
   unSubscribeTopic = () => {
-    // TODO: unSubscribeTopic
-    this.client.unsubscribe(this.state.subscribedTopic);
+    client.unsubscribe(this.state.subscribedTopic);
   };
 
   sendMessage = () => {
-    // TODO: sendMessage
-    this.client.send(this.state.topic, this.state.message);
+    this.state.message = `${client.clientId}:${this.state.severity}:${this.state.latitude},${this.state.longitude}`
+    client.send(this.state.topic, this.state.message);
+  };
+  
+  getOneTimeLocation = () => {
+    Geolocation.getCurrentPosition(
+      //Will give you the current location
+      (position) => {
+ 
+        //getting the Longitude from the location json
+        const currentLongitude = 
+          JSON.stringify(position.coords.longitude);
+ 
+        //getting the Latitude from the location json
+        const currentLatitude = 
+          JSON.stringify(position.coords.latitude);
+
+        this.state.longitude = currentLongitude;
+        
+        //Setting Longitude state
+        this.state.latitude = currentLatitude;
+      },
+      (error) => {
+        console.log(error.message);
+      },
+      {
+        enableHighAccuracy: false,
+        timeout: 30000,
+        maximumAge: 1000
+      },
+    );
+  };
+  
+  subscribeLocation = () => {
+    watchID = Geolocation.watchPosition(
+      (position) => {
+ 
+        //getting the Longitude from the location json        
+        const currentLongitude =
+          JSON.stringify(position.coords.longitude);
+ 
+        //getting the Latitude from the location json
+        const currentLatitude = 
+          JSON.stringify(position.coords.latitude);
+ 
+        //Setting Longitude state
+        this.state.longitude = currentLongitude;
+ 
+        //Setting Latitude state
+        this.state.latitude = currentLatitude;
+      },
+      (error) => {
+        console.log(error.message);
+      },
+      {
+        enableHighAccuracy: false,
+        maximumAge: 1000
+      },
+    );
   };
 
   render() {
@@ -120,7 +179,7 @@ class App extends Component {
             title="DISCONNECT"
             onPress={() => {
               client.disconnect();
-              clearInterval(interval);
+              clearInterval(this.timer);
               this.setState({status: '', subscribedTopic: ''});
             }}
             buttonStyle={{backgroundColor: '#397af8'}}
