@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable no-undef */
 /* @flow */
-import React from 'react';  
+import React from 'react'; 
 import {Component} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 
