@@ -20,7 +20,7 @@ def disconnect_db(connection):
 
 def create_db(dbname, conn):
     mycursor = conn.cursor()
-    mycursor.execute("CREATE DATABASE "+ dbname)
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS "+ dbname)
 
 def create_table(connection,dbname, sqlSTR):
     try:
@@ -67,23 +67,23 @@ def create_sql_query(client_id, severity, latitude, longitude):
 
 host = '192.168.15.3'
 user = 'root'
-password = 'root'
+password = 'root@2022'
 dbname = 'GSL_IoT_ITA_TEC'
 
-sqlSTR = """CREATE TABLE Severity ( 
+sqlSTR = """CREATE TABLE IF NOT EXISTS Severity ( 
                              Id int(11) NOT NULL AUTO_INCREMENT,
                              CLIENT_ID varchar(250) NOT NULL,
                              SEVERITY varchar(15) NOT NULL,
                              LATITUDE float NOT NULL,
                              LONGITUDE float NOT NULL,
+                             TIME timestamp DEFAULT CURRENT_TIMESTAMP,
                              PRIMARY KEY (Id)) """
 
 dbconn = connect_mysql(host, user, password)
+create_db("GSL_IoT_ITA_TEC",dbconn)
+create_table(dbconn, dbname,sqlSTR)
 
 if __name__ == '__main__':
-    drop_db('GSL_IoT_ITA_TEC',dbconn)
-    create_db("GSL_IoT_ITA_TEC",dbconn)
-    create_table(dbconn, dbname,sqlSTR)
     disconnect_db(dbconn)
 
 

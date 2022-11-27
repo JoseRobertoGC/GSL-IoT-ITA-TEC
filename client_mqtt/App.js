@@ -85,6 +85,7 @@ class App extends Component {
     client.onConnected = this.onConnect;
     client.onConnectionLost = this.onConnectionLost;
     client.onMessageArrived = this.onMessageArrived;
+    client.onConnectionLost = this.onFailure;
   };
 
   unSubscribeTopic = () => {

@@ -41,3 +41,4 @@ def run():
     client.loop_forever()
 
 run()
+mysql_utils.disconnect_db(mysql_utils.dbconn)
